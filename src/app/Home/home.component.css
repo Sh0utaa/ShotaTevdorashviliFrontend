@@ -1,0 +1,104 @@
+.home_container {
+    height: 700px;
+    width: 100%;
+    background-image: url('../../img/Home_Background.jpg');    
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.button_contacts_container {
+    display: flex;
+}
+
+.main_block {
+    margin-left: 5%;
+    height: 70%;
+    width: 70%;
+}
+
+
+.title p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.button_container {
+    margin-top: 50px;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.button_container button {
+    width: 45%;
+    height: 100%;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.852);
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border: solid 2px white;
+    border-radius: 3px;
+}
+
+.button_container button:hover {
+    transition: background-color 0.4s;
+    background-color: white;
+}
+
+.button_container button:hover p {
+    transition: color 0.4s;
+    color: black;
+}
+
+.button_container p {
+    letter-spacing: 3px;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.contacts {
+    width: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts i {
+color: white;
+}
+
+.contacts i:hover {
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 27px;
+    }
+    .button_container {
+        display: block;
+    }
+    .button_container button {
+        width: 100%;   
+    }
+
+}

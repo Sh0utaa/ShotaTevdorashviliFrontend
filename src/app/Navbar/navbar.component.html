@@ -1,0 +1,30 @@
+<div class="hamburger_menu" [class.active]="isSidebarVisible"  (click)="toggleSidebar()">
+    <div class="menu">
+      <h4>MENU</h4>
+    </div>
+
+    <div class="menu hamburger_container">
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+    </div>
+  </div>
+  
+  <div class="sidebar" [class.active]="isSidebarVisible">
+    <div class="close_button" (click)="toggleSidebar()">
+        <h4>NAVIGATION</h4>
+        <div class="span_container">
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+    <div class="list_container" >
+      <ul (click)="toggleSidebar()">
+        <li (click)="scrollToHome()">Home</li>
+        <li (click)="scrollToAbout()">About</li>
+        <li (click)="scrollToHarvard()">Harvard</li>
+        <li (click)="scrollToProjects()">Projects</li>
+        <li (click)="scrollToContact()">Contact</li>
+      </ul>
+    </div>
+  </div>

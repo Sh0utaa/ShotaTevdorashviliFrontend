@@ -1,0 +1,159 @@
+/* Basic styling for the menu bar */
+.hamburger_menu {
+  background-color: rgba(0, 0, 0, 0.581);
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    right: 20px; 
+    width: 135px;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.4s
+  }
+  
+  h4 {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    color: #0cb525;
+    transition: color 0.3s
+  }
+
+  h4:hover {
+    color: white;
+  }
+
+  span:hover {
+    color: #0cb525;
+  }
+
+  .hamburger_menu:hover h4 {
+    color: white;
+  }
+
+  .close_button{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .close_button h4 {
+    letter-spacing: 3px;
+    font-size: 12px;
+  }
+
+  .close_button:hover h4 {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menu {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu h4 {
+    margin-left: 20px;
+    letter-spacing: 5px;
+    font-size: 14px;
+  }
+
+  .hamburger_container {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+  }
+  
+  .hamburger {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+  }
+  
+  /* Styling for the sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -320px; /* Initially hidden */
+    width: 260px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    overflow: auto;
+    transition: right 0.5s ease;
+    z-index: 999; /* Below the menu bar */
+    padding: 30px;
+  }
+  
+  /* Sidebar when active */
+  .sidebar.active {
+    right: 0; /* Slide in */
+  }
+
+  .hamburger_menu.active {
+    display: none;
+  }
+  
+  /* Basic styling for the content */
+  .content {
+    margin-top: 50px; /* Adjust for the height of the menu bar */
+    padding: 20px;
+  }
+  
+.span_container {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.span_container span {
+  position: absolute;
+  width: 4%;
+  height: 2px;
+  background-color: white; /* Set the color of the X */
+  transform-origin: center;
+}
+
+.span_container span:hover h4 {
+  color: white;
+}
+
+.span_container span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.span_container span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+
+ul, li {
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.list_container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}

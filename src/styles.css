@@ -1,0 +1,25 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+::selection {
+    background-color: rgba(255, 255, 255, 0.603);
+    color: #008512; /* Optional: change text color for better contrast */
+}
+
+::-moz-selection { /* For Firefox */
+    background-color: rgba(255, 255, 255, 0.603);
+    color: #39b54a; /* Optional: change text color for better contrast */
+}
+  

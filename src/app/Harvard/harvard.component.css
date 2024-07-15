@@ -1,0 +1,30 @@
+.main_content {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_container {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    padding-bottom: 50px;
+}
+
+p {
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+
+img {
+    max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
+    height: auto;   /* Maintains the aspect ratio */
+    display: block; /* Removes the default inline-block spacing */
+    padding: 10px;
+  }
